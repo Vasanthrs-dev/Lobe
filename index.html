@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/query.css" />
+    <title>Lobe Tour | Machine Learning Made easy</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="svg-wrap">
+          <img
+            src="images/logo.svg"
+            alt="logo image of lobe tour"
+            class="logo"
+          />
+          <svg
+            onclick="showSideBar()"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="menu-open menu-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <svg
+            onclick="hideSideBar()"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="menu-close menu-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <nav class="nav">
+          <div>Overview</div>
+          <div>Examples</div>
+          <div>Tour</div>
+          <div>Blog</div>
+          <div>Help</div>
+          <button class="btn">Dowload</button>
+        </nav>
+      </div>
+      <nav></nav>
+    </header>
+    <script>
+      function showSideBar() {
+        const sideBar = document.querySelector(".nav");
+        const menuClose = document.querySelector(".menu-close");
+        sideBar.style.display = "flex";
+        menuClose.style.opacity = "1";
+        menuClose.style.pointerEvents = "auto";
+        menuClose.style.visibility = "visible";
+      }
+
+      function hideSideBar() {
+        const hideSideBar = document.querySelector(".nav");
+        const menuClose = document.querySelector(".menu-close");
+        hideSideBar.style.display = "none";
+        menuClose.style.opacity = "0";
+        menuClose.style.pointerEvents = "none";
+        menuClose.style.visibility = "hidden";
+      }
+    </script>
+  </body>
+</html>

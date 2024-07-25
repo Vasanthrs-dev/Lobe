@@ -1,0 +1,62 @@
+/* 
+
+Gray color:
+light - #f1f3f5
+
+*/
+
+@import url(https://db.onlinewebfonts.com/c/5ffb14c9ea41286ce553095f37596444?family=Lab+Grotesque+Web);
+
+@font-face {
+  font-family: "Lab Grotesque Web";
+  src: url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.eot");
+  src: url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.svg#Lab Grotesque Web")
+      format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lab Grotesque Web";
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5cols {
+  grid-template-columns: repeat(5, 1fr);
+}

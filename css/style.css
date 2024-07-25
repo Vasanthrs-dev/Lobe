@@ -1,0 +1,54 @@
+.svg-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 8rem;
+  padding: 2rem 0;
+}
+
+.menu-icon {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: #f1f3f5;
+}
+
+.nav,
+.menu-close {
+  position: absolute;
+}
+
+.menu-close {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  transform: translate(0, 40%);
+}
+
+.menu-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.nav {
+  height: 50vh;
+  width: 80%;
+  /* background-color: red; */
+  display: none;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.nav div {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #868e96;
+}
