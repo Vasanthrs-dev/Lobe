@@ -1,26 +1,62 @@
 /* 
+Primary:
+#04ddb2
+Primary Shades:
+#04c7a0
+
+#333
+#767676
 
 Gray color:
+#868e96
+#343a40
 light - #f1f3f5
 
 */
 
-@import url(https://db.onlinewebfonts.com/c/5ffb14c9ea41286ce553095f37596444?family=Lab+Grotesque+Web);
+/* Fonts */
 
 @font-face {
   font-family: "Lab Grotesque Web";
-  src: url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.eot");
-  src: url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/5ffb14c9ea41286ce553095f37596444.svg#Lab Grotesque Web")
-      format("svg");
+  src: url("../fonts/LabGrotesque-Thin.woff") format("woff"),
+    url("../fonts/LabGrotesque-Thin.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "Lab Grotesque Web";
+  src: url("../fonts/LabGrotesque-Regular.woff") format("woff"),
+    url("../fonts/LabGrotesque-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque Web";
+  src: url("../fonts/LabGrotesque-Medium.woff") format("woff"),
+    url("../fonts/LabGrotesque-Regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque Web";
+  src: url("../fonts/LabGrotesque-Bold.woff") format("woff"),
+    url("../fonts/LabGrotesque-Medium.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque Web";
+  src: url("../fonts/LabGrotesque-Black.woff") format("woff"),
+    url("../fonts/LabGrotesque-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* General Styles */
 
 * {
   margin: 0;
@@ -33,30 +69,82 @@ html {
 }
 
 body {
-  font-family: "Lab Grotesque Web";
+  font-family: "Lab Grotesque Web", sans-serif;
 }
 
 .container {
   margin: 0 auto;
-  padding: 0 3.2rem;
+  padding: 0 4.8rem;
 }
 
 .grid {
   display: grid;
 }
 
-.grid--2cols {
-  grid-template-columns: repeat(2, 1fr);
+.grid-1-cols {
+  grid-template-columns: 1fr;
 }
 
-.grid--3cols {
-  grid-template-columns: repeat(3, 1fr);
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
 }
 
-.grid--4cols {
-  grid-template-columns: repeat(4, 1fr);
+.grid-3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.grid--5cols {
-  grid-template-columns: repeat(5, 1fr);
+/* ////////////////////////////// 
+HEADER 
+/////////////////////////////////*/
+
+header {
+  margin-top: 1.6rem;
+}
+
+.header {
+  align-items: center;
+}
+
+.logo {
+  width: 7.4rem;
+}
+
+.header-nav {
+  justify-self: center;
+}
+
+.header-nav--parent {
+  display: flex;
+  gap: 4.8rem;
+  font-size: 1.8rem;
+  list-style: none;
+  color: #868e96;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header-nav--child {
+  transition: all 0.2s;
+}
+
+.header-nav--child:hover {
+  color: #343a40;
+  transform: scale(1.1);
+}
+
+.header-btn {
+  width: 12.8rem;
+  padding: 1.2rem 2rem;
+  border-radius: 500px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+  background-color: #04ddb2;
+  color: #fff;
+  justify-self: end;
+  cursor: pointer;
+}
+
+.header-btn:hover {
+  background-color: #04c7a0;
 }
