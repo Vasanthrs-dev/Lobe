@@ -61,10 +61,6 @@ MAIN SECTION
 
 /* POP UP */
 
-.hidden {
-  display: none;
-}
-
 .pop-up {
   position: fixed;
   top: 50%;
@@ -106,4 +102,5 @@ MAIN SECTION
   font-size: 4rem;
   height: 5rem;
   width: 5rem;
+  cursor: pointer;
 }

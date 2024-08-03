@@ -83,7 +83,8 @@ body {
 }
 
 .container-b {
-  margin: 6.4rem 20rem;
+  width: 80%;
+  margin: 6.4rem auto;
 }
 
 .grid {
@@ -103,6 +104,7 @@ body {
 }
 .grid-5-cols {
   grid-template-columns: repeat(5, 1fr);
+  column-gap: 2rem;
 }
 
 /* ////////////////////////////// 
@@ -172,6 +174,21 @@ header {
   background-color: #04c7a0;
 }
 
+.hamburger {
+  display: none;
+  justify-self: end;
+}
+
+.bar {
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin: 0.5rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #333;
+}
+
 /* ///////////////////////////
 FOOTER
 ////////////////////////////// */
@@ -228,4 +245,8 @@ FOOTER
 
 .divider {
   border-bottom: 1px solid #ced4da;
+}
+
+.hidden {
+  display: none;
 }
