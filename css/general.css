@@ -70,11 +70,20 @@ html {
 
 body {
   font-family: "Lab Grotesque Web", sans-serif;
+  position: relative;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 4.8rem;
+}
+
+.container-m {
+  margin: 6.4rem 12.8rem;
+}
+
+.container-b {
+  margin: 6.4rem 20rem;
 }
 
 .grid {
@@ -86,11 +95,14 @@ body {
 }
 
 .grid-2-cols {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-3-cols {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 /* ////////////////////////////// 
@@ -98,11 +110,19 @@ HEADER
 /////////////////////////////////*/
 
 header {
-  margin-top: 1.6rem;
 }
 
 .header {
+  padding: 1.6rem;
+  margin: 0 4rem 0 6rem;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+
+  z-index: 100;
 }
 
 .logo {
@@ -118,13 +138,13 @@ header {
   gap: 4.8rem;
   font-size: 1.8rem;
   list-style: none;
-  color: #868e96;
+  color: #767676;
   font-weight: 500;
   cursor: pointer;
 }
 
 .header-nav--child {
-  transition: all 0.2s;
+  transition: all 0.15s;
 }
 
 .header-nav--child:hover {
@@ -132,7 +152,7 @@ header {
   transform: scale(1.1);
 }
 
-.header-btn {
+.wide-btn {
   width: 12.8rem;
   padding: 1.2rem 2rem;
   border-radius: 500px;
@@ -141,10 +161,71 @@ header {
   border: none;
   background-color: #04ddb2;
   color: #fff;
-  justify-self: end;
   cursor: pointer;
+}
+
+.header-btn {
+  justify-self: end;
 }
 
 .header-btn:hover {
   background-color: #04c7a0;
+}
+
+/* ///////////////////////////
+FOOTER
+////////////////////////////// */
+.footer {
+  margin-bottom: 12rem;
+}
+.footer-container {
+  justify-items: center;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.brand--logo {
+  width: 8rem;
+}
+
+.brand--text {
+  font-size: 1.6rem;
+  color: #767676;
+}
+
+.code-svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  vertical-align: middle;
+  stroke: #04c7a0;
+}
+
+.footer-nav-title {
+  color: #333;
+  font-weight: 700;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 1rem;
+}
+
+.ft-icon {
+  height: 4.4rem;
+  width: 4.4rem;
+  fill: #fff;
+  stroke: #fff;
+  background-color: #04c7a0;
+  padding: 0.8rem;
+  border-radius: 20rem;
+}
+
+/* OTHERS */
+
+.divider {
+  border-bottom: 1px solid #ced4da;
 }
