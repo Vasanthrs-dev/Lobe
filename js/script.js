@@ -21,7 +21,6 @@ closeBtn.addEventListener("click", function () {
 });
 
 hamburger.addEventListener("click", mobileMenu);
-
 function mobileMenu() {
   hamburger.classList.toggle("active");
   headerNav.classList.toggle("active");

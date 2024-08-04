@@ -111,9 +111,6 @@ body {
 HEADER 
 /////////////////////////////////*/
 
-header {
-}
-
 .header {
   padding: 1.6rem;
   margin: 0 4rem 0 6rem;
@@ -154,6 +151,10 @@ header {
   transform: scale(1.1);
 }
 
+.last-element {
+  display: none;
+}
+
 .wide-btn {
   width: 12.8rem;
   padding: 1.2rem 2rem;
@@ -187,6 +188,7 @@ header {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #333;
+  border-radius: 20rem;
 }
 
 /* ///////////////////////////
@@ -212,8 +214,17 @@ FOOTER
 .brand--text {
   font-size: 1.6rem;
   color: #767676;
+  cursor: pointer;
+}
+.brand--text-display {
+  font-size: 1.6rem;
+  color: #767676;
 }
 
+.brand--text:hover {
+  color: #000;
+  transform: scale(1.02);
+}
 .code-svg {
   width: 1.8rem;
   height: 1.8rem;
@@ -222,6 +233,7 @@ FOOTER
 }
 
 .footer-nav-title {
+  font-size: 1.6rem;
   color: #333;
   font-weight: 700;
 }
@@ -239,6 +251,11 @@ FOOTER
   background-color: #04c7a0;
   padding: 0.8rem;
   border-radius: 20rem;
+  transition: all 0.2s;
+}
+
+.ft-icon:hover {
+  transform: scale(1.1);
 }
 
 /* OTHERS */
